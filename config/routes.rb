@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   #
   # get 'students/edit'
 
-  resources :students, only: [:index, :show]
+  resources :students, only: [:index]
 
 end

@@ -356,3 +356,25 @@ Processing by StudentsController#show as HTML
   Parameters: {"id"=>"edit"}
   Rendered students/show.html.erb within layouts/application (0.0ms)
 Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/edit" for ::1 at 2018-08-12 18:51:13 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"edit"}
+  Rendered students/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 208ms (Views: 201.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2018-08-12 18:51:17 -0500
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/students" for ::1 at 2018-08-12 18:51:19 -0500
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.2ms)
